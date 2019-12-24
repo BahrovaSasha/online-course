@@ -1,0 +1,48 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "media"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #fff
+  opacity: 1
+
+*:-moz-placeholder
+  color: #fff
+  opacity: 1
+
+*::-moz-placeholder
+  color: #fff
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #fff
+  opacity: 1
+
+*::-webkit-scrollbar
+  display: none
+
+input,textarea
+  border: none
+  border-radius: $radius
+  font-family: $default-font
+  font-size: 1.4rem
+  outline: none
+textarea
+  resize: none
+
+html, body
+  height: 100%
+// width: 100%
+
+html
+  font-size: 10px
