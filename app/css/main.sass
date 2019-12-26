@@ -1,0 +1,102 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "media"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #fff
+  opacity: 1
+
+*:-moz-placeholder
+  color: #fff
+  opacity: 1
+
+*::-moz-placeholder
+  color: #fff
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #fff
+  opacity: 1
+
+*::-webkit-scrollbar
+  display: none
+
+input,textarea
+  border: none
+  border-radius: $radius
+  font-family: $default-font
+  font-size: 1.4rem
+  outline: none
+textarea
+  resize: none
+
+html, body
+  height: 100%
+// width: 100%
+
+html
+  font-size: 10px
+body
+  overflow-x: hidden
+  font-family: $default-font
+  color: $default-text-color
+  background-color: $background-color
+  font-size: 1.6rem
+  line-height: 1.6
+  margin: 0
+.header
+  background: transparent
+  z-index: 100
+button
+  border: none
+a
+  text-decoration: none
+.h1
+  color: #fff
+  font-family: $header-font
+  font-size: 7.2rem
+  font-weight: normal
+  line-height: 1
+  text-transform: uppercase
+  margin: 2rem 0
+.general-wrapper
+  max-width: 120rem
+  margin: 0 auto
+  padding: 0 1rem
+.lang-button
+  color: $accent
+  width: 4rem
+  height: 4rem
+  background: transparent
+  font-family: $default-font
+.header-contact
+  color: $accent
+  background: transparent
+  padding: 0 1rem
+  font-family: $default-font
+.main-banner
+  padding-top: 2rem
+  background: linear-gradient(to right, rgba(0, 13, 83, .7) 60%, rgba(0, 131, 225, .7) 40%), url('../img/wedding.jpg') no-repeat
+  background-size: 100% auto
+//.main-banner-content
+//  max-width: 140rem
+.main-video-wrap
+  width: 60rem
+  height: 40rem
+  border-radius: $radius
+  iframe
+    border: none
+    background-color: #000
+    width: 100%
+    height: 100%
+    border-radius: $radius
