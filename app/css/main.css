@@ -2086,7 +2086,7 @@ h1, h2, h3, h4, p {
   height: 4rem;
   border-radius: 2rem;
   background-color: #52FFB6;
-  box-shadow: 0;
+  box-shadow: 0 0 0.6rem #52FFB6;
   padding: 0 4rem;
   margin-top: 2rem;
 }
@@ -2165,10 +2165,93 @@ h1, h2, h3, h4, p {
   filter: drop-shadow(0 0 2rem rgba(0, 13, 83, 0.2));
 }
 
+.about-lesson-form {
+  padding-bottom: 6rem;
+}
+.about-lesson-form li {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  position: relative;
+}
+.about-lesson-form li:before {
+  content: "";
+  position: absolute;
+  background-color: #52FFB6;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  left: -4rem;
+  top: calc(50% - .9rem);
+  box-shadow: 0 0 0.6rem #52FFB6;
+}
 .about-lesson-form .main-button {
   color: #fff;
   background-color: #000D53;
   box-shadow: 0 0 0.6rem #000D53;
+}
+
+.achievements-section {
+  min-height: 53.4rem;
+  background: linear-gradient(to right, rgba(0, 13, 83, 0.7), rgba(0, 131, 225, 0.7)), url("../img/fire.jpg") 60% 40% no-repeat;
+  background-size: 100% auto;
+}
+
+.counter-wrapper {
+  width: 100%;
+}
+
+.achievements-counter {
+  padding: 6rem 0;
+  color: #52FFB6;
+  font-family: "philosopher-bold";
+  font-size: 6.4rem;
+  filter: drop-shadow(0 0 0.6rem #52FFB6);
+}
+
+.achievements-text {
+  text-align: center;
+  color: #fff;
+  font-family: "opensans-bold";
+  font-size: 2.2rem;
+}
+
+.program-section {
+  padding-bottom: 6rem;
+}
+
+.program-steps {
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.steps-wrap {
+  padding: 0 9rem 0 4rem;
+}
+
+.step-text {
+  font-size: 3.2rem;
+  font-family: "opensans-bold";
+  max-width: 40rem;
+}
+
+.about-us-section {
+  background: linear-gradient(to right, #2E3A75, #0083e1);
+}
+
+.about-us-info {
+  width: 100%;
+}
+
+.about-us-contacts {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+.about-us-contacts .about-us-social {
+  padding: 3rem 0;
+}
+.about-us-contacts .about-us-social .social-link {
+  color: #52FFB6;
+  font-family: "opensans-bold";
 }
 
 /*# sourceMappingURL=main.css.map */
