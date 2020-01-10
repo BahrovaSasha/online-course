@@ -2,7 +2,7 @@
 @import "libs"
 @import "vars"
 @import "media"
-
+@import "../../node_modules/sass-autoprefixer/scss/prefixes.scss"
 *
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
@@ -12,21 +12,6 @@
     -moz-box-sizing: border-box
     box-sizing: border-box
 
-*::-webkit-input-placeholder
-  color: #fff
-  opacity: 1
-
-*:-moz-placeholder
-  color: #fff
-  opacity: 1
-
-*::-moz-placeholder
-  color: #fff
-  opacity: 1
-
-*:-ms-input-placeholder
-  color: #fff
-  opacity: 1
 
 *::-webkit-scrollbar
   display: none
@@ -62,6 +47,7 @@ body
   z-index: 100
 button
   border: none
+  background: transparent
 a
   text-decoration: none
 li
@@ -261,8 +247,9 @@ h1, h2, h3, h4, p
   .feature-symbol
     position: absolute
     z-index: 1
-    width: 5rem
+    width: 4rem
     height: auto
+    opacity: .8
     //fill: $default-text-color
 .feature-text
   font-size: 2.2rem
@@ -282,16 +269,30 @@ h1, h2, h3, h4, p
     font-family: $item-font
 .speaker-img-wrapper
   position: relative
+  height: 100%
   &:before
     content: url(../img/back-figure.svg)
     position: absolute
     width: 100%
     fill: $accent
+    filter: drop-shadow($light-shadow)
+
+  //svg
+  //  position: absolute
+  //  height: 120%
+  //  width: auto
+  //  top: -10%
+  //  left: 2rem
+  //  filter: drop-shadow(0 0 2rem rgba(0, 13, 83, .2))
 
   img
     position: absolute
-    svg
-      filter: drop-shadow(0 0 2rem rgba(0, 13, 83, .2))
+    height: 140%
+    width: auto
+    top: -20%
+    left: 0
+
+
 
 
 .about-lesson-form
@@ -327,7 +328,7 @@ h1, h2, h3, h4, p
   //box-shadow: $light-shadow
   font-family: $header-font
   font-size: 6.4rem
-  filter: drop-shadow(0 0 .6rem #52FFB6)
+  filter: drop-shadow($light-shadow)
 .achievements-text
   text-align: center
   color: #fff
@@ -341,17 +342,24 @@ h1, h2, h3, h4, p
   padding-top: 6rem
 .steps-wrap
   padding: 0 9rem 0 4rem
+  min-height: 26.4rem
+  position: relative
   &:before
     content: ''
-    height: 100%
-    width: .8rem
+    position: absolute
+    height: 26rem
+    width: .6rem
     background-color: #fff
     z-index: -2
+.steps-wrap-items
+  min-height: 26.4rem
 
 .step-figure
   font-size: 2.2rem
   font-family: $item-font
   position: relative
+  span
+    color: $default-text-color
 .program-icon
   position: absolute
   width: 46px
