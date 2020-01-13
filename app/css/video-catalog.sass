@@ -4,7 +4,42 @@
 @import "media"
 @import "../../node_modules/sass-autoprefixer/scss/prefixes.scss"
 
+iframe
+  border: none
 .header
   background-color: $background-color
+  padding-top: 2rem
   .header-contact
     color: $default-text-color
+  .lang-button
+    color: $default-text-color
+.video-wrapper
+  padding: 8rem 0
+  width: 100%
+  .video-item
+    max-width: 40rem
+    width: 100%
+    padding-bottom: 3rem
+    .video-item-wrap
+      background-color: #fff
+      border-radius: $radius
+      box-shadow: $shadow
+      display: block
+      .screen-wrap
+        border-radius: $radius
+        background-color: #000
+        width: 100%
+        height: 24rem
+      .video-item-info
+        padding: 1.6rem
+        .video-name
+          font-family: $header-font
+          font-size: 2.2rem
+          white-space: nowrap
+          padding-right: 2rem
+          position: relative
+          &:before
+            position: absolute
+            background-color: $accent
+            box-shadow: $light-shadow
+            border-radius: 50%

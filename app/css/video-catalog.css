@@ -1828,11 +1828,57 @@ html {
  *
  * @see https://www.sitepoint.com/building-linear-gradient-mixin-sass/
  */
+iframe {
+  border: none;
+}
+
 .header {
   background-color: #E7EFFF;
+  padding-top: 2rem;
 }
 .header .header-contact {
   color: #000D53;
+}
+.header .lang-button {
+  color: #000D53;
+}
+
+.video-wrapper {
+  padding: 8rem 0;
+  width: 100%;
+}
+.video-wrapper .video-item {
+  max-width: 40rem;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.video-wrapper .video-item .video-item-wrap {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.6rem rgba(0, 13, 83, 0.2);
+  display: block;
+}
+.video-wrapper .video-item .video-item-wrap .screen-wrap {
+  border-radius: 1rem;
+  background-color: #000;
+  width: 100%;
+  height: 24rem;
+}
+.video-wrapper .video-item .video-item-wrap .video-item-info {
+  padding: 1.6rem;
+}
+.video-wrapper .video-item .video-item-wrap .video-item-info .video-name {
+  font-family: "philosopher-bold";
+  font-size: 2.2rem;
+  white-space: nowrap;
+  padding-right: 2rem;
+  position: relative;
+}
+.video-wrapper .video-item .video-item-wrap .video-item-info .video-name:before {
+  position: absolute;
+  background-color: #52FFB6;
+  box-shadow: 0 0 0.6rem #52FFB6;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=video-catalog.css.map */
