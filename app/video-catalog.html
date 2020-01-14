@@ -28,13 +28,22 @@
         <section class="video-section general-wrapper d-flex flex-column align-items-center">
             <h3 class="section-header">Hallo Name</h3>
             <div class="video-wrapper row">
-                <div class="video-item col-lg-4">
+                <div class="video-item disabled col-lg-4">
                     <div class="video-item-wrap">
+                        <button type="button" class="get-lesson-button active">
+                            <span class="get-lesson-trigger">Get lesson</span>
+                        </button>
                         <div class="screen-wrap">
+                            <span class="video-time">32:00</span>
                             <iframe></iframe>
                         </div>
                         <div class="video-item-info d-flex flex-nowrap align-items-center">
-                            <span class="video-name">Lesson 1.</span>
+                            <div class="video-name">
+                                <span>Lesson 1.</span>
+                                <div class="video-message-notification d-flex align-items-center justify-content-center">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                            </div>
                             <p class="video-description">How to create an attractive dating profile</p>
                         </div>
                     </div>
@@ -45,7 +54,12 @@
                             <iframe></iframe>
                         </div>
                         <div class="video-item-info d-flex flex-nowrap align-items-center">
-                            <span class="video-name">Lesson 1.</span>
+                            <div class="video-name">
+                                <span>Lesson 1.</span>
+                                <div class="video-message-notification d-flex align-items-center justify-content-center">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                            </div>
                             <p class="video-description">How to create an attractive dating profile</p>
                         </div>
                     </div>
@@ -56,7 +70,12 @@
                             <iframe></iframe>
                         </div>
                         <div class="video-item-info d-flex flex-nowrap align-items-center">
-                            <span class="video-name">Lesson 1.</span>
+                            <div class="video-name">
+                                <span>Lesson 1.</span>
+                                <div class="video-message-notification d-flex align-items-center justify-content-center">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                            </div>
                             <p class="video-description">How to create an attractive dating profile</p>
                         </div>
                     </div>
@@ -67,14 +86,28 @@
                             <iframe></iframe>
                         </div>
                         <div class="video-item-info d-flex flex-nowrap align-items-center">
-                            <span class="video-name">Lesson 1.</span>
+                            <div class="video-name">
+                                <span>Lesson 1.</span>
+                                <div class="video-message-notification d-flex align-items-center justify-content-center">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                            </div>
                             <p class="video-description">How to create an attractive dating profile</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <button type="button" class="load-more-button">Load more</button>
         </section>
     </main>
 
+    <div class="watch-video-popup active">
+        <div class="watch-video-popup-contain d-flex align-items-center justify-content-center">
+            <div class="watch-video-popup-wrap">
+                <button type="button" class="close-button">×</button>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
