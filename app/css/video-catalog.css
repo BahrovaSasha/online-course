@@ -1848,7 +1848,7 @@ iframe {
 }
 
 .video-wrapper {
-  padding: 8rem 0 2rem;
+  padding: 4rem 0 2rem;
   width: 100%;
 }
 .video-wrapper .video-item {
@@ -1906,14 +1906,16 @@ iframe {
 .video-wrapper .video-item .video-item-wrap .video-item-info {
   padding: 1.6rem;
 }
-.video-wrapper .video-item .video-item-wrap .video-item-info .video-name {
+
+.video-name {
   font-family: "philosopher-bold";
   font-size: 2.2rem;
   white-space: nowrap;
   padding-right: 2rem;
   position: relative;
 }
-.video-wrapper .video-item .video-item-wrap .video-item-info .video-message-notification {
+
+.video-message-notification {
   position: absolute;
   background-color: #52FFB6;
   box-shadow: 0 0 0.6rem #52FFB6;
@@ -1924,10 +1926,11 @@ iframe {
   right: 0.6rem;
   font-size: 1.2rem;
 }
-.video-wrapper .video-item.disabled .get-lesson-button {
+
+.video-item.disabled .video-item-wrap .get-lesson-button {
   display: block;
 }
-.video-wrapper .video-item.disabled .screen-wrap, .video-wrapper .video-item.disabled .video-item-info {
+.video-item.disabled .screen-wrap, .video-item.disabled .video-item-info {
   filter: grayscale(100%);
 }
 
@@ -1959,7 +1962,8 @@ iframe {
   background-color: #fff;
   box-shadow: 0 0 0.6rem rgba(0, 13, 83, 0.2);
   position: relative;
-  width: 34rem;
+  width: 96%;
+  max-width: 80rem;
   padding: 2rem;
   border-radius: 1rem;
   min-height: 30rem;
@@ -1973,6 +1977,48 @@ iframe {
   top: 0;
   right: 0;
   color: #8A95BA;
+}
+
+.watch-video-item {
+  width: 100%;
+  min-height: 44rem;
+  margin: 1rem 0;
+  background-color: #ccc;
+}
+.watch-video-item iframe {
+  width: 100%;
+  height: auto;
+}
+
+.comment-form-field {
+  height: 4rem;
+  margin: 2.6rem 0;
+}
+.comment-form-field .form-input {
+  background-color: #E7EFFF;
+}
+
+.question-wrap {
+  font-size: 1.4rem;
+}
+.question-wrap .question-person {
+  color: #494949;
+  padding-right: 1.4rem;
+}
+
+.answer-wrap {
+  display: none;
+  color: #494949;
+  font-size: 1.4rem;
+  padding: 2rem 0 0 4rem;
+}
+
+.answer-wrap.active {
+  display: block;
+}
+
+.show-answer-button {
+  color: #000D53;
 }
 
 /*# sourceMappingURL=video-catalog.css.map */
